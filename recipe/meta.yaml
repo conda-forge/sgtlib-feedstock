@@ -60,6 +60,7 @@ about:
   license: GPL-3.0-only
   license_file:
     - LICENSE
+  description: A software tool for graph theory analysis of microscopy images.
 
 extra:
   recipe-maintainers:
