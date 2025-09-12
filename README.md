@@ -9,6 +9,8 @@ Package license: GPL-3.0-only
 
 Summary: A software tool for graph theory analysis of microscopy images.
 
+A software tool for graph theory analysis of microscopy images.
+
 Current build status
 ====================
 
