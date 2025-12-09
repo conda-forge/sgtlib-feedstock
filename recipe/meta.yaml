@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sgtlib-{{ version }}.tar.gz
-  sha256: 7c06da45e4cf48db91c9274a4d877ed3a7cfe6f8c7e8c70ad5aaa916cdc2a4d9
+  sha256: cb302a38af1a4e3b91c6cef86e031a220b9cd3bb6643c2223c3dafb2387543b5
 
 build:
   entry_points:
