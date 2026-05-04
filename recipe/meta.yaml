@@ -1,5 +1,5 @@
 {% set name = "sgtlib" %}
-{% set version = "3.7.5" %}
+{% set version = "3.7.9" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sgtlib-{{ version }}.tar.gz
-  sha256: 076eb1c6e175765bacfce1cd5a5175792838ca2aae78f841d97f245120c5dd26
+  sha256: 23b6e2eadc1ae8e5f7c390c920b374a0df43e7df65346b4dec8edaae3503db13
 
 build:
   entry_points:
