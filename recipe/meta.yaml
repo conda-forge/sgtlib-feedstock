@@ -1,6 +1,6 @@
 {% set name = "sgtlib" %}
-{% set version = "3.7.5" %}
-{% set python_min = "3.12" %}
+{% set version = "3.8.5" %}
+{% set python_min = "3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sgtlib-{{ version }}.tar.gz
-  sha256: 076eb1c6e175765bacfce1cd5a5175792838ca2aae78f841d97f245120c5dd26
+  sha256: a6bf14f1220a4b9dbfea23becd219708afd83f431c9f5a58a739bb28a1fb71a3
 
 build:
   entry_points:
@@ -21,31 +21,29 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=80.0
+    - setuptools >=82.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - numpy ==2.2.6
-    - pandas ==2.3.2
-    - scipy ==1.16.2
-    - gsd ==4.0.0
-    - python-igraph ==0.11.9
-    - matplotlib-base ==3.10.6
-    - networkx ==3.5
-    - scikit-image ==0.25.2
-    - opencv ==4.12.0
-    - pillow ==11.3.0
-    - pyside6 ==6.9.2
-    - kneed ==0.8.5
+    - numpy ==2.4.6
+    - pyside6 ==6.11.1
+    - pillow ==12.2.0
+    - opencv ==4.13.0
+    - gsd ==5.0.1
+    - matplotlib-base ==3.10.9
+    - scipy ==1.17.1
+    - pandas ==3.0.3
+    - python-igraph ==1.0.0
+    - networkx ==3.6.1
+    - scikit-image ==0.26.0
+    - requests ==2.34.2
+    - packaging ==26.2
     - xlsxwriter ==3.2.9
-    - requests ==2.32.5
-    - packaging ==25.0
-    - dropbox ==12.0.2
-    - cryptography ==46.0.1
-    - scikit-learn ==1.7.2
+    - scikit-learn ==1.9.0
+    - gudhi ==3.12.0
   run_constrained:
-    - ovito ==3.14.0
+    - ovito ==3.15.4
 
 test:
   imports:
